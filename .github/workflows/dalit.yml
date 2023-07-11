@@ -1,0 +1,13 @@
+name: Dispatch Workflow
+on:
+  workflow_dispatch:
+
+jobs:
+  perform-step:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Perform Step
+        run: |
+          echo "$(dirname "a/b/c.yml")"
+          echo "$(basename "a/b/c.yml")"
+          
